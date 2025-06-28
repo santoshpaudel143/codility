@@ -1,0 +1,4 @@
+121,Kaji       ,Sumit ,kathmandu-1,ktm,bg,124
+123,pandey,puran ,kathmandu-1,ktm,bg,124
+123,sharma,puran ,kathmandu-3,ktm,bg,124
+125,pandey,puran ,kathmandu-1,ktm,bg,124
