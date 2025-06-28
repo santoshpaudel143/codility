@@ -9,10 +9,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-public class ScrubMember {
 
+public class ScrubMember {
+    static Logger logger = Logger.getLogger(ScrubMember.class.getName());
 
     public static List<String> scrub(File memberFile) {
         List<String> scrubbedMembers;
@@ -48,7 +51,7 @@ public class ScrubMember {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.WARNING, "Error reading members file", e);
             throw new RuntimeException(e.getMessage());
         }
         return memberList;
